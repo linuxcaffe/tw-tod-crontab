@@ -1,7 +1,7 @@
 # tw-tod-crontab
 A crontab setup to export a Time Of Day system variable, as a filter for http://taskwarrior.org
 
-It is a re-imagining of an older project of mine (https://github.com/linuxcaffe/tw-tod-sh) that used a more convoluted approach.
+In ongoing efforts to refine my `task next` report, this is a re-imagining of an older project of mine (https://github.com/linuxcaffe/tw-tod-sh) that used a more convoluted approach.
 
 One of the most important things to make your big task list manageable, is to filter out tasks that are not immediately actionable. Many tasks are ideally done at a certain time of day, for example, some like to make calls in the morning, run errands in the afternoon, work on hobbies in the evening, work on the garage on the weekend. Not every task is Time Of Day specific, but for those that are, it could be helpful to conceal those tasks outside of those times. 
 
@@ -20,4 +20,4 @@ This project (tw-tod-crontab) aims to make that work using taskwarrior's (new) a
 21-23 * * 0,6 export TOD=( -morn -aft -day -eve -wkday )
 ```
 
-Once the TOD crontab is working (some help here?) the system varable $TOD could be used in a report, or at the CLI, to hide those tasks better accomplished at another time.  
+With the TOD crontab is working (some help here?) the system varable $TOD could be used in a report, or at the CLI, to hide those tasks better accomplished at another time. (hey, should this be an anacron thing?)
