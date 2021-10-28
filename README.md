@@ -18,5 +18,6 @@ This project (tw-tod-crontab) aims to make that work using taskwarrior's (new) a
 1 0 12-17 * * 0,6 export TOD=( -morn -eve -night -wkday )
 2 0 17-21 * * 0,6 export TOD=( -morn -aft -day -night -wkday )
 3 0 21-23 * * 0,6 export TOD=( -morn -aft -day -eve -wkday )
-
 ```
+
+Once the TOD crontab is working (some help here?) the system varable $TOD could be use in a report or at the CLI to hide those tasks better accomplished at another time.  
