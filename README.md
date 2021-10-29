@@ -10,14 +10,15 @@ This project (tw-tod-crontab) aims to make that work using taskwarrior's (new) a
 (caveat, I havent got it working yet, I'm still learning how cron works, and could use some help) 
 
 ```
-6-12 * * 1-5 export TOD=( -aft -eve -night -wknd )
-12-17 * * 1-5 export TOD=( -morn -eve -night -wknd )
-17-21 * * 1-5 export TOD=( -morn -aft -day -night -wknd )
-21-23 * * 1-5 export TOD=( -morn -aft -day -eve -wknd )
-6-12 * * 0,6 export TOD=( -aft -eve -night -wkday )
-12-17 * * 0,6 export TOD=( -morn -eve -night -wkday )
-17-21 * * 0,6 export TOD=( -morn -aft -day -night -wkday )
-21-23 * * 0,6 export TOD=( -morn -aft -day -eve -wkday )
+6-12 * * 1-5 export TOD=` -aft -eve -night -wknd `
+12-17 * * 1-5 export TOD=` -morn -eve -night -wknd `
+17-21 * * 1-5 export TOD=` -morn -aft -day -night -wknd `
+21-23 * * 1-5 export TOD=` -morn -aft -day -eve -wknd `
+6-12 * * 0,6 export TOD=` -aft -eve -night -wkdy `
+12-17 * * 0,6 export TOD=` -morn -eve -night -wkdy `
+17-21 * * 0,6 export TOD=` -morn -aft -day -night -wkdy `
+21-23 * * 0,6 export TOD=` -morn -aft -day -eve -wkdy `
+
 ```
 
 With the TOD crontab is working (some help here?) the system varable $TOD could be used in a report, or at the CLI, to hide those tasks better accomplished at another time. (hey, should this be an anacron thing?)
