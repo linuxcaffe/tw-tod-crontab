@@ -1,5 +1,5 @@
 # tw-tod-crontab
-A crontab setup to export a Time Of Day system variable, as a filter for http://taskwarrior.org
+A crontab setup to export a Time Of Day system variable, then use $TOD as a filter for http://taskwarrior.org in reports or at the CLI.
 
 In ongoing efforts to refine my `task next` report, this is a re-imagining of an older project of mine (https://github.com/linuxcaffe/tw-tod-sh) that used a more convoluted approach.
 
